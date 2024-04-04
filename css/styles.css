@@ -72,6 +72,7 @@ body {
   width: 326px;
   height: 160px;
   background-color: #1E2D69;
+  border-radius: 10px;
  }
 
 p{
@@ -105,5 +106,12 @@ p{
   height: 10px;
   background-color: white;
   border-radius: 100%;
+}
+
+.numbers {
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
