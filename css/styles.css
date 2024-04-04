@@ -21,10 +21,13 @@ ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: blue;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   margin-top: 127px;
   margin-left: 25px;
+  background-image: url('../assets/images/bg-mobile.png');
 }
 
 .top {
@@ -73,7 +76,11 @@ body {
   height: 160px;
   background-color: #1E2D69;
   border-radius: 10px;
- }
+  padding-top:24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 p{
   color: #DBD9FF;
@@ -113,5 +120,146 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
 }
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+}
+
+.space {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  color: white;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.left {
+  font-size: 12px;
+  color: #0C122C;
+  opacity: 50%;
+}
+
+.bottom {
+  width: 179px;
+  height: 72px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  width: 326px;
+  height: 413px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bottom {
+  position: absolute;
+  top: 485px;
+  left: 100px;
+}
+
+@media screen and (min-width:786px) {
+  body {
+    background-image: url('../assets/images/bg-desktop.png');
+    background-color: #0C122C;
+  }
+
+  .container {
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    width:920px;
+    height: 201px;
+  }
+
+  .top{
+    width: 350px;
+  }
+
+  .medium{
+    width: 540px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 39px;
+  }
+
+  .bar{
+    position: relative;
+    width: 459px;
+    height: 20px;
+    background-color: #0C122C;
+    border-radius: 10px;
+  }
+
+  .numbers {
+    width: 459px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  .bar-inside {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 339px;
+    height: 14px;
+    background-image: linear-gradient(to right,#FFA197,#FF4A95);
+    border-radius: 10px;
+  }
+
+  .circle {
+    position: absolute;
+    width: 10px;
+    top: 2px;
+    left: 327px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+  }
+
+  .bottom {
+    position: absolute;
+    top: 300px;
+    left: 995px;
+  }
+  .triangle {
+    position: absolute;
+    top: 60px;
+    left: 149px;
+    width: 0; 
+    height: 0; 
+    rotate: 45deg;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    border-bottom: 23px solid white;
+  }
+}
+
 
